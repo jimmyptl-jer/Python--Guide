@@ -1,0 +1,1 @@
+('more mayhem', 'imelda may', 2000, ((1, 'Pulling the rug'), (2, 'psycho'), (3, 'mayhem')))

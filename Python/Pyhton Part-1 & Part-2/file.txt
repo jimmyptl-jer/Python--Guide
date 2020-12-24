@@ -1,0 +1,6 @@
+The Apple A12 Bionic is a 64-bit ARM-based system on a chip (SoC) designed by Apple Inc. It first appeared in the iPhone XS, XS Max, XR, and 2019 versions of the iPad Air and iPad Mini. Aug 9 2019
+Instruction set: A64
+Max. CPU clock rate: to 2.49 GHz
+Cores: Hexa-core (2× high performance Vortex + 4× high efficiency Tempest)
+Min. feature size: 7 nm
+Reference: en.wikipedia.org/wiki/Apple_A12
