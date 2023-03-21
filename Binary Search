@@ -1,0 +1,55 @@
+tests  = [
+  {
+  'input': {
+    'cards': [13,11,10,7,4,3,2,0],
+    'query': 7
+  },
+  'output': 3
+  },
+  {
+    'input': {
+    'cards': [4,2,1,-1],
+    'query': 4
+  },
+  'output': 0
+  },
+  {
+    'input': {
+    'cards': [8,8,8,6,6,6,3,2,1],
+    'query': 6
+  },
+  'output': 4
+  }
+]
+
+tests.append({
+  
+})
+
+cards=  tests['input']['cards']
+print(cards)
+query = tests['input']['query']
+print(query)
+output = tests['output']
+print(output)
+
+def locate_position(nums, num):
+    left, right = 0, len(nums) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if nums[mid] == num:
+            return mid
+        elif nums[mid] < num:
+            right = mid - 1
+        else:
+            left = mid + 1
+    return -1
+
+
+result = locate_position(cards,query)
+print(result)
+
+if(result == output):
+  print("Pass")
+else:
+  print("No Match")
