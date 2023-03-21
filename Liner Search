@@ -1,0 +1,45 @@
+tests = [
+  {
+  'input': {
+    'cards': [13,11,10,7,4,3,2,0],
+    'query': 7
+  },
+  'output': 3
+  },
+  {
+    'input': {
+    'cards': [4,2,1,-1],
+    'query': 4
+  },
+  'output': 0
+  },
+  {
+    'input': {
+    'cards': [8,8,8,6,6,6,3,2,1],
+    'query': 6
+  },
+  'output': 4
+  }
+]
+
+
+def locate_card(cards_list,search_card_query):
+  location = 0
+  
+  for i in range(len(cards_list)):
+    if cards_list[i] == search_card_query:
+      return (location)
+    location  = location +1
+
+for test in tests:
+  cards_list = test['input']['cards']
+  search_card_query = test['input']['query']
+  output = test['output']
+  
+  output_of_search = locate_card(cards_list,search_card_query)
+  print(output_of_search)
+  
+  if (output_of_search == output):
+    print("Searched Passed")
+  else:
+    print("Searched Failed")
